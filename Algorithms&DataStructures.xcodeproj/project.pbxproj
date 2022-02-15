@@ -11,9 +11,13 @@
 		737F982527BBE6EE0044F356 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F982427BBE6EE0044F356 /* ContentView.swift */; };
 		737F982727BBE6F10044F356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737F982627BBE6F10044F356 /* Assets.xcassets */; };
 		737F982A27BBE6F10044F356 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737F982927BBE6F10044F356 /* Preview Assets.xcassets */; };
-		737F983427BBE6F20044F356 /* Algorithms_DataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F983327BBE6F20044F356 /* Algorithms_DataStructuresTests.swift */; };
 		737F983E27BBE6F20044F356 /* Algorithms_DataStructuresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F983D27BBE6F20044F356 /* Algorithms_DataStructuresUITests.swift */; };
 		737F984027BBE6F20044F356 /* Algorithms_DataStructuresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F983F27BBE6F20044F356 /* Algorithms_DataStructuresUITestsLaunchTests.swift */; };
+		737F984D27BBE70C0044F356 /* HashMapInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F984C27BBE70C0044F356 /* HashMapInterfaces.swift */; };
+		737F984F27BBE7720044F356 /* HashMapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F984E27BBE7720044F356 /* HashMapTest.swift */; };
+		737F985227BBE78C0044F356 /* HasMapInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F985127BBE78C0044F356 /* HasMapInterfaces.swift */; };
+		737F985427BBE7A70044F356 /* HashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F985327BBE7A70044F356 /* HashMap.swift */; };
+		737F985627BBE7C00044F356 /* HashMapEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F985527BBE7C00044F356 /* HashMapEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +44,14 @@
 		737F982627BBE6F10044F356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		737F982927BBE6F10044F356 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		737F982F27BBE6F20044F356 /* Algorithms&DataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algorithms&DataStructuresTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		737F983327BBE6F20044F356 /* Algorithms_DataStructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithms_DataStructuresTests.swift; sourceTree = "<group>"; };
 		737F983927BBE6F20044F356 /* Algorithms&DataStructuresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algorithms&DataStructuresUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		737F983D27BBE6F20044F356 /* Algorithms_DataStructuresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithms_DataStructuresUITests.swift; sourceTree = "<group>"; };
 		737F983F27BBE6F20044F356 /* Algorithms_DataStructuresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithms_DataStructuresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		737F984C27BBE70C0044F356 /* HashMapInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMapInterfaces.swift; sourceTree = "<group>"; };
+		737F984E27BBE7720044F356 /* HashMapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMapTest.swift; sourceTree = "<group>"; };
+		737F985127BBE78C0044F356 /* HasMapInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasMapInterfaces.swift; sourceTree = "<group>"; };
+		737F985327BBE7A70044F356 /* HashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMap.swift; sourceTree = "<group>"; };
+		737F985527BBE7C00044F356 /* HashMapEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMapEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,12 @@
 		737F982127BBE6EE0044F356 /* Algorithms&DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				737F985027BBE7800044F356 /* HashMaps */,
 				737F982227BBE6EE0044F356 /* Algorithms_DataStructuresApp.swift */,
 				737F982427BBE6EE0044F356 /* ContentView.swift */,
 				737F982627BBE6F10044F356 /* Assets.xcassets */,
 				737F982827BBE6F10044F356 /* Preview Content */,
+				737F984C27BBE70C0044F356 /* HashMapInterfaces.swift */,
 			);
 			path = "Algorithms&DataStructures";
 			sourceTree = "<group>";
@@ -113,7 +123,7 @@
 		737F983227BBE6F20044F356 /* Algorithms&DataStructuresTests */ = {
 			isa = PBXGroup;
 			children = (
-				737F983327BBE6F20044F356 /* Algorithms_DataStructuresTests.swift */,
+				737F984E27BBE7720044F356 /* HashMapTest.swift */,
 			);
 			path = "Algorithms&DataStructuresTests";
 			sourceTree = "<group>";
@@ -125,6 +135,16 @@
 				737F983F27BBE6F20044F356 /* Algorithms_DataStructuresUITestsLaunchTests.swift */,
 			);
 			path = "Algorithms&DataStructuresUITests";
+			sourceTree = "<group>";
+		};
+		737F985027BBE7800044F356 /* HashMaps */ = {
+			isa = PBXGroup;
+			children = (
+				737F985127BBE78C0044F356 /* HasMapInterfaces.swift */,
+				737F985327BBE7A70044F356 /* HashMap.swift */,
+				737F985527BBE7C00044F356 /* HashMapEntry.swift */,
+			);
+			path = HashMaps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +218,7 @@
 					};
 					737F982E27BBE6F20044F356 = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
 						TestTargetID = 737F981E27BBE6EE0044F356;
 					};
 					737F983827BBE6F20044F356 = {
@@ -259,6 +280,10 @@
 			files = (
 				737F982527BBE6EE0044F356 /* ContentView.swift in Sources */,
 				737F982327BBE6EE0044F356 /* Algorithms_DataStructuresApp.swift in Sources */,
+				737F984D27BBE70C0044F356 /* HashMapInterfaces.swift in Sources */,
+				737F985627BBE7C00044F356 /* HashMapEntry.swift in Sources */,
+				737F985227BBE78C0044F356 /* HasMapInterfaces.swift in Sources */,
+				737F985427BBE7A70044F356 /* HashMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737F983427BBE6F20044F356 /* Algorithms_DataStructuresTests.swift in Sources */,
+				737F984F27BBE7720044F356 /* HashMapTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,15 +499,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UU5J2SPKHT;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.Algorithms-DataStructuresTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algorithms&DataStructures.app/Algorithms&DataStructures";
@@ -494,11 +526,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UU5J2SPKHT;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.risinggalaxy.com.Algorithms-DataStructuresTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
