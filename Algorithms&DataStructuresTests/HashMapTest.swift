@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import AlgoritmesAndDataStructure
+@testable import Algorithms_DataStructures
 
 class TestHashMap: XCTestCase {
     
