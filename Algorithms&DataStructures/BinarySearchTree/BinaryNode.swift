@@ -12,9 +12,9 @@ class BinaryNode: BinaryNodeInterface {
     typealias T = BinaryNode
     
     var key: Int
-    var left: BinaryNode?
-    var right: BinaryNode?
-    var min: BinaryNode {
+    var left: T?
+    var right: T?
+    var min: T {
         if left == nil {
             return self
         } else {

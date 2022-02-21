@@ -11,7 +11,7 @@ class BinarySearchTree: BinarySearchTreeInterface {
     
     typealias T = BinaryNode
     
-    internal var root: BinaryNode?
+    internal var root: T?
     
     public internal (set) var treeOrder: [Int] = []
     
@@ -19,9 +19,9 @@ class BinarySearchTree: BinarySearchTreeInterface {
         root = insert(root, key)
     }
     
-    internal func insert(_ node: BinaryNode?, _ key: Int) -> BinaryNode {
+    internal func insert(_ node: T?, _ key: Int) -> T {
         guard let insideNode = node else {
-            let newNode = BinaryNode(key)
+            let newNode = T(key)
             return newNode
         }
         if key < insideNode.key {
@@ -32,13 +32,13 @@ class BinarySearchTree: BinarySearchTreeInterface {
         return insideNode
     }
     
-    public func find(_ key: Int) -> BinaryNode? {
+    public func find(_ key: Int) -> T? {
         guard let rootNode = root else { return nil }
         guard let node = find(rootNode, key) else { return nil }
         return node
     }
     
-    internal func find(_ node: BinaryNode?, _ key: Int) -> BinaryNode? {
+    internal func find(_ node: T?, _ key: Int) -> T? {
         guard let insideNode = node else { return nil }
         if key == insideNode.key {
             return insideNode
@@ -56,7 +56,7 @@ class BinarySearchTree: BinarySearchTreeInterface {
         return node.key
     }
     
-    internal func findMin(_ node: BinaryNode) -> BinaryNode? {
+    internal func findMin(_ node: T) -> T? {
         return node.min
     }
     
@@ -66,7 +66,7 @@ class BinarySearchTree: BinarySearchTreeInterface {
     }
     
     @discardableResult
-    internal func delete(_ node: inout BinaryNode?, _ key: Int) -> BinaryNode? {
+    internal func delete(_ node: inout T?, _ key: Int) -> T? {
         guard let insideNode = node else { return nil }
         
         if key < insideNode.key {
@@ -102,21 +102,21 @@ class BinarySearchTree: BinarySearchTreeInterface {
         }
     }
     
-    internal func inOrder(_ node: BinaryNode?)  {
+    internal func inOrder(_ node: T?)  {
         guard let insideNode = node else { return }
         inOrder(insideNode.left)
         treeOrder.append(insideNode.key)
         inOrder(insideNode.right)
     }
     
-    internal func preOrder(_ node: BinaryNode?) {
+    internal func preOrder(_ node: T?) {
         guard let insideNode = node else { return }
         treeOrder.append(insideNode.key)
         preOrder(insideNode.left)
         preOrder(insideNode.right)
     }
     
-    internal func postOrder(_ node: BinaryNode?) {
+    internal func postOrder(_ node: T?) {
         guard let insideNode = node else { return }
         postOrder(insideNode.left)
         postOrder(insideNode.right)
